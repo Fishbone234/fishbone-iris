@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Iris Biometric System Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="system">
+
+  <h1>Iris Biometric Authentication System</h1>
+  <p class="intro">
+    This prototype demonstrates an iris-based biometric system including user registration
+    and identity verification.
+  </p>
+
+  <!-- Registration Section -->
+  <div class="section">
+    <h2>1. User Registration</h2>
+    <p class="instruction">
+      The user registers their iris pattern into the system.
+    </p>
+
+    <div class="scanner">
+      <div class="iris"></div>
+      <p>Align your eye with the scanner</p>
+    </div>
+
+    <button onclick="registerIris()">Register Iris</button>
+    <p id="registerStatus"></p>
+  </div>
+
+  <!-- Authentication Section -->
+  <div class="section">
+    <h2>2. Identity Verification</h2>
+    <p class="instruction">
+      The system scans the iris and compares it with the registered template.
+    </p>
+
+    <button onclick="verifyIris()">Verify Identity</button>
+    <p id="verifyStatus"></p>
+  </div>
+
+  <!-- System Explanation -->
+  <div class="info">
+    <h3>System Overview</h3>
+    <p>
+      Iris recognition is a biometric technology that identifies individuals by analyzing
+      unique patterns in the iris. This prototype simulates the registration and verification
+      process to demonstrate usability and system flow.
+    </p>
+  </div>
+
+  <p class="disclaimer">
+    * This is a simulated biometric system for educational purposes only.
+    No real biometric data is collected or stored.
+  </p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
